@@ -1,12 +1,24 @@
 import { AiOutlineCloudDownload, AiOutlineSearch } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import { usePlayStore } from "../hooks/usePlayStore";
 
 interface PlayStoreProps {};
 
 export function PlayStore({}: PlayStoreProps) {
-  const { apps } = usePlayStore();
+  const { apps, setApps } = usePlayStore();
 
-  const selectedApp = apps.find(app => app.routePath === location.pathname);
+  function handleAppInstallation(selectedAppName: string) {
+    setApps((apps) => apps.map((app) => {
+      if (app.name === selectedAppName) {
+        return {
+          ...app,
+          installed: true,
+        };
+      }
+      
+      return app;
+    }));
+  }
 
   return (
     <div className="h-full w-full px-6 text-neutral-100 py-4 flex flex-col gap-4 max-h-[48rem] overflow-y-auto overflow-x-hidden">
@@ -33,15 +45,16 @@ export function PlayStore({}: PlayStoreProps) {
 
 
               {installed ? (
-                <div className="hidden items-center group-hover:flex text-green-500 p-1 px-3 rounded-lg hover:bg-green-500/10">
+                <Link to={routePath} className="hidden items-center group-hover:flex text-green-500 p-1 px-3 rounded-lg hover:bg-green-500/10 transition-all">
                   <span>Abrir</span>
-                </div>
+                </Link>
 
               ) : (
-                <div className="hidden items-center gap-2 group-hover:flex text-green-500 p-1 px-3 rounded-lg hover:bg-green-500/10">
+                // TODO: Make a install animation
+                <button type="button" onClick={() => handleAppInstallation(name)} className="hidden items-center gap-2 group-hover:flex text-blue-400 p-1 px-3 rounded-lg hover:bg-blue-400/20  transition-all">
                   <AiOutlineCloudDownload />
                   <span>Instalar</span>
-                </div>
+                </button>
 
               )}
             </button>
