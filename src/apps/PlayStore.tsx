@@ -38,18 +38,12 @@ export function PlayStore({}: PlayStoreProps) {
                 </div>
 
               ) : (
-                <div className="hidden items-center gap-2 group-hover:flex">
+                <div className="hidden items-center gap-2 group-hover:flex text-green-500 p-1 px-3 rounded-lg hover:bg-green-500/10">
                   <AiOutlineCloudDownload />
                   <span>Instalar</span>
                 </div>
 
               )}
-
-
-
-
-
-
             </button>
           ))
         }
