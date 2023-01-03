@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#1F1D32] flex items-center justify-center h-screen w-screen select-none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-0 h-0;
+    scrollbar-width: 0px;
+  }
+
+  ::-webkit-scrollbar, ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply hidden;
+  }
+
+  ::-webkit-scrollbar, ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+}
