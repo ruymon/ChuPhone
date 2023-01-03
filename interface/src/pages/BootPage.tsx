@@ -1,6 +1,6 @@
 import chuSunIcon from './../assets/chuSun.svg';
 
-export function Startup() {
+export function BootPage() {
   return (
     <div className='w-full h-full flex flex-col items-center justify-center gap-8'>
     <img src={chuSunIcon} />

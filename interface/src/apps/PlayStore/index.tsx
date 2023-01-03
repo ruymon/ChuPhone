@@ -1,6 +1,6 @@
 import { AiOutlineCloudDownload, AiOutlineSearch } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { usePlayStore } from "../hooks/usePlayStore";
+import { usePlayStore } from "../../hooks/usePlayStore";
 
 interface PlayStoreProps {};
 

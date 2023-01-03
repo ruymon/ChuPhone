@@ -70,6 +70,7 @@ export const defaultAppsHelper: IApps[] = [
     name: "IFood",
     icon: "ifood.png",
     routePath: "/ifood",
+    background: "bg-[#ea1d2c]",
     size: "130 MB",
     installed: false,
   },

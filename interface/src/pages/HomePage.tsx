@@ -1,7 +1,7 @@
 import { AppIcon } from "../components/AppIcon";
 import { usePlayStore } from "../hooks/usePlayStore";
 
-export function Home() {
+export function HomePage() {
   const { apps: installedApps } = usePlayStore();
 
   return (
@@ -19,7 +19,7 @@ export function Home() {
               if (!installed) return null;
 
               return (
-                <AppIcon icon={icon} title={name} appPath={routePath} />
+                <AppIcon icon={icon} title={name} appPath={routePath} key={routePath}/>
               )
             })
           }
