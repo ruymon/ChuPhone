@@ -5,6 +5,8 @@ export interface IApps {
   size: string;
   installed: boolean;
   background?: string;
+  isNative?: boolean;
+  useDarkShell?: boolean;
 }
 
 export const defaultAppsHelper: IApps[] = [
@@ -16,12 +18,27 @@ export const defaultAppsHelper: IApps[] = [
     installed: false,
   },
   {
+    name: "FlightRadar24",
+    icon: "flightRadar.png",
+    routePath: "/flightRadar",
+    size: "5.5 MB",
+    installed: true,
+  },
+  {
+    name: "Layers",
+    icon: "layers.png",
+    routePath: "/layers",
+    size: "5.5 MB",
+    installed: true,
+  },
+  {
     name: "Store",
     icon: "store.png",
     routePath: "/store",
     background: "bg-neutral-900",
     size: "101 MB",
     installed: true,
+    isNative: true,
   },
   {
     name: "Blaze",
@@ -37,6 +54,7 @@ export const defaultAppsHelper: IApps[] = [
     routePath: "/calculator",
     size: "5.5 MB",
     installed: true,
+    isNative: true,
   },
   {
     name: "Camera",
@@ -44,6 +62,7 @@ export const defaultAppsHelper: IApps[] = [
     routePath: "/camera",
     size: "6 MB",
     installed: true,
+    isNative: true,
   },
   {
     name: "Preferências",
@@ -51,6 +70,7 @@ export const defaultAppsHelper: IApps[] = [
     routePath: "/settings",
     size: "4 MB",
     installed: true,
+    isNative: true,
   },
   {
     name: "Contatos",
@@ -58,6 +78,7 @@ export const defaultAppsHelper: IApps[] = [
     routePath: "/contacts",
     size: "4.8 MB",
     installed: true,
+    isNative: true,
   },
   {
     name: "E-mail",
@@ -70,9 +91,10 @@ export const defaultAppsHelper: IApps[] = [
     name: "IFood",
     icon: "ifood.png",
     routePath: "/ifood",
-    background: "bg-[#ea1d2c]",
+    background: "bg-white",
     size: "130 MB",
-    installed: false,
+    installed: true,
+    useDarkShell: true,
   },
   {
     name: "Instagram",
@@ -116,6 +138,7 @@ export const defaultAppsHelper: IApps[] = [
     routePath: "/phone",
     size: "15 MB",
     installed: true,
+    isNative: true,
   },
   {
     name: "Tinder",
