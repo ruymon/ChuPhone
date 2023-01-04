@@ -22,14 +22,14 @@ export const defaultAppsHelper: IApps[] = [
     icon: "flightRadar.png",
     routePath: "/flightRadar",
     size: "5.5 MB",
-    installed: true,
+    installed: false,
   },
   {
     name: "Layers",
     icon: "layers.png",
     routePath: "/layers",
     size: "5.5 MB",
-    installed: true,
+    installed: false,
   },
   {
     name: "Store",
@@ -93,7 +93,7 @@ export const defaultAppsHelper: IApps[] = [
     routePath: "/ifood",
     background: "bg-white",
     size: "130 MB",
-    installed: true,
+    installed: false,
     useDarkShell: true,
   },
   {
@@ -130,7 +130,7 @@ export const defaultAppsHelper: IApps[] = [
     routePath: "/spotify",
     size: "250 MB",
     background: "bg-black",
-    installed: true,
+    installed: false,
   },
   {
     name: "Telefone",
