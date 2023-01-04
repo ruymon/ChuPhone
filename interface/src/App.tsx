@@ -1,6 +1,7 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import { Calculator } from './apps/Calculator';
 import { Ifood } from './apps/Ifood';
+import { Phone } from './apps/Phone';
 import { PlayStore } from './apps/PlayStore';
 import { Spotify } from './apps/Spotify';
 import { PhoneLayout } from "./layouts/PhoneLayout";
@@ -23,6 +24,7 @@ export function App() {
 
           <Route path="/store" element={<PlayStore />} />
           <Route path="/ifood" element={<Ifood />} />
+          <Route path="/phone" element={<Phone />} />
 
         </Route>
       </Routes>
