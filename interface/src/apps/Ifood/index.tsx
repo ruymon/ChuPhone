@@ -5,7 +5,7 @@ import { Loader } from "./Loader";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import { restaurants } from "./restaurantesHelper";
+import { restaurants } from "./restaurantsHelper";
 
 const navItems = [
   {
