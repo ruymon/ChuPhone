@@ -7,7 +7,6 @@ A Free and Open-source phone asset to be used in FiveM roleplay servers! 🤑
 
 ## Authors
 - [@Ruy Monteiro](https://www.github.com/ruymon)
-- [@Matheus Rodrigues](https://github.com/Muulfz)
 
 
 ## Demo
