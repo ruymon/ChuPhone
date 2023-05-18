@@ -12,9 +12,7 @@ A Free and Open-source phone asset to be used in FiveM roleplay servers! 🤑
 
 ## Demo
 
-Insert gif or link to demo
 ![Demo](https://i.imgur.com/4caMywA.png)
-
 
 ## Installation
 
